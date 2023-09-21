@@ -1,10 +1,8 @@
-# Flowchart #
-
-```mermdaid
-flowchart TD;
-    A([Start])-->B{{int jari-jari, double keliling, luas}};
-    B{{int jari-jari, double keliling, luas}}-->C[/input jari-jari/];
-    C[/input jari-jari/]-->D(keliling = 2 * pi * r, luas = pi * r * r);
-    D(keliling = 2 * pi * r, luas = pi * r * r)-->E[/tampilkan keliling, luas/];
-    E[/output keliling, luas/]-->F([Selesai]);
+```mermaid
+graph TD;
+    A([Start])-->B{{double pi, jari-jari, luas, keliling}};
+    B{{double pi, jari-jari, luas, keliling}}-->C[/input jari-jari/];
+    C[/input jari-jari/]-->D(luas = pi * jari-jari * jari-jari keliling = 2 * pi * jari-jari);
+    D(luas = pi * jari-jari * jari-jari keliling = 2 * pi * jari-jari)-->E[/tampilkan luas dan keliling/];
+    E[/tampilkan luas dan keliling/]-->F([Selesai]);
 ```
