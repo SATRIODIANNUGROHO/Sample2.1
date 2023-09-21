@@ -3,9 +3,9 @@ flowchart TD;
     A([Start])-->B{{int jumlah kamar, jumlah tamu, lama hari menginap, tipe kamar}};
     B{{int jumlah kamar, jumlah tamu, lama hari menginap, tipe kamar}}-->C[/saldo, tipe kamar, jumlah kamar, jumlah tamu, lama menginap/];
     C[/saldo, tipe kamar, jumlah kamar, jumlah tamu, lama menginap/]-->D(total bayar = tipe kamar * lama menginap * jumlah kamar);
-    D(total bayar = tipe kamar * lama menginap * jumlah kamar)-->E[/tampilkan total bayar,/];
-    E[/tampilkan total bayar,/]-->F[/jika saldo kurang dari totoal harga, print "pembayaran gagal"/];
-    E[/tampilkan total bayar,/]-->G[/jika saldo lebih dari atau sama dengan total harga, print "pembayaran berhasil"/];
+    D(total bayar = tipe kamar * lama menginap * jumlah kamar)-->E[/tampilkan total bayar/];
+    E[/tampilkan total bayar/]-->F[/jika saldo kurang dari totoal harga, print "pembayaran gagal"/];
+    E[/tampilkan total bayar/]-->G[/jika saldo lebih dari atau sama dengan total harga, print "pembayaran berhasil"/];
     F[/jika saldo < totoal harga, print "pembayaran gagal"/]-->H([Selesai]);
     G[/jika saldo >= total harga, print "pembayaran berhasil"/]-->H([Selesai]);
 ```
