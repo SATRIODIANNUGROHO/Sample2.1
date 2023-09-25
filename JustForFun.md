@@ -10,5 +10,5 @@ graph TD;
     F{jika jarak >= 1000 meter}-->G(print gunakan range weapon);
     G(print gunakan range weapon)-->H[/output print senjata yang digunakan adalah/];
     E(print gunakan melee weapon)-->H[/output print senjata yang digunakan adalah/];
-    H[/Output senjata yang digunakan adalah/]-->I([Selesai]);
+    H[/output print senjata yang digunakan adalah/]-->I([Selesai]);
 ```
