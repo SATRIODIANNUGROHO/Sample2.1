@@ -2,16 +2,14 @@
 
 ```mermaid
 graph TD;
-    A([Start])-->B{{double jarak}};
-    B{{double jarak}}-->C[/input jarak/];
-    C[/input jarak/]-->D{jarak kurang dari 5 meter};
-    D{jarak <= 5 meter}-->E(print gunakan melee weapon);
-    D{jarak <= 5 meter}-->F{jika jarak >= 5 meter};
-    F{jika jarak >= 5 meter}-->G(print gunakan range weapon);
-    F{jika jarak >= 5 meter}-->J{jika jarak = 5 meter};
-    J{jika jarak = 5 meter}-->E(print gunakan melee weapon);
-    J{jika jarak = 5 meter}-->G(print gunakan range weapon);
-    G(print gunakan range weapon)-->H[/output print senjata yang digunakan adalah/];
-    E(print gunakan melee weapon)-->H[/output print senjata yang digunakan adalah/];
-    H[/output print senjata yang digunakan adalah/]-->I([Selesai]);
+    1([Start])-->2{{double jarak}};
+    2{{double jarak}}-->3[/input jarak/];
+    3[/input jarak/]-->4{jika jarak >= 5 meter};
+    3[/input jarak/]-->6{jarak <= 5 meter};
+    4{jika jarak >= 5 meter}-->7(gunakan range weapon);
+    6{jarak <= 5 meter}-->8(gunakan melee weapon);
+    7(gunakan range weapon)-->9[/output print senjata yang digunakan/];
+    8(gunakan melee weapon)-->9[/output print senjata yang digunakan/];
+    9[/print senjata yang digunakan/]-->10([Selesai]);
+
 ```
