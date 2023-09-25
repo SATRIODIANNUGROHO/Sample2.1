@@ -8,7 +8,7 @@ graph TD;
     D{jarak <= 5 meter}-->E(print gunakan melee weapon);
     D{jarak <= 5 meter}-->F{jika jarak >= 5 meter};
     F{jika jarak >= 5 meter}-->G(print gunakan range weapon);
-    F{jika jarak >= 5 meter}-->J{jika jarak = 5 meter};
+    D{jarak <= 5 meter}-->J{jika jarak = 5 meter};
     J{jika jarak = 5 meter}-->E(print gunakan melee weapon);
     J{jika jarak = 5 meter}-->G(print gunakan range weapon);
     G(print gunakan range weapon)-->H[/output print senjata yang digunakan adalah/];
