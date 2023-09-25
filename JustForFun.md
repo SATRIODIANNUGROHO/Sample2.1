@@ -4,7 +4,8 @@
 graph TD;
     A([Start])-->B{{double jarak}};
     B{{double jarak}}-->C[/input jarak/];
-    C[/input jarak/]-->D{luas = pi * r * r, keliling = 2 * pi * r};
-    D(luas = pi * r * r, keliling = 2 * pi * r)-->E[/tampilkan luas dan keliling/];
-    E[/tampilkan luas dan keliling/]-->F([Selesai]);
+    C[/input jarak/]-->D{jarak kurang dari 5 meter};
+    D{jarak kurang dari 5 meter}-->E(print gunakan melee weapon);
+    D{jarak kurang dari 5 meter}-->F(print gunakan range weapon);
+    F(print gunakan range weapon)-->G([Selesai]);
 ```
