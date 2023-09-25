@@ -10,6 +10,6 @@ graph TD;
     6{jarak <= 5 meter}-->8(gunakan melee weapon);
     7(gunakan range weapon)-->9[/output print senjata yang digunakan/];
     8(gunakan melee weapon)-->9[/output print senjata yang digunakan/];
-    9[/print senjata yang digunakan/]-->10([Selesai]);
+    9[/output print senjata yang digunakan/]-->10([Selesai]);
 
 ```
