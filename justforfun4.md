@@ -1,0 +1,2 @@
+# Latihan Individu 2 #
+
