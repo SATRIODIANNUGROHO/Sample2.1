@@ -12,4 +12,5 @@ flowchart TD;
 7{54 > 15}-->|Tidak|9[/54 bukan bilangan terbesar/];
 8[/54 merupakan bilangan terbesar/]-->10([Finish]);
 9[/54 bukan bilangan terbesar/]-->10([Finish]);
+6[/54 bukan bilangan terbesar/]-->10([Finish]);
 ```
