@@ -16,4 +16,12 @@ flowchart TD;
 12[/selain kamus dan novel/]-->13{lebih dari 3};
 13{lebih dari 3}-->|Ya|14[/diskon 5%/];
 13{lebih dari 3}-->|Tidak|15[/tidak mendapat diskon/];
+6[/diskon 10% + 2%/]-->16(bayar = total - diskon);
+7[/diskon 10%/]-->16(bayar = total - diskon);
+10[/diskon 7% + 2%/]-->16(bayar = total - diskon);
+11[/diskon 7% + 1%/]-->16(bayar = total - diskon);
+14[/diskon 5%/]-->16(bayar = total - diskon);
+15[/tidak mendapat diskon/]-->16(bayar = total - diskon);
+16(bayar = total - diskon)-->17[/bayar/];
+17[/bayar/]-->18([Finish]);
 ```
